@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Василий Пущин](https://up.htmlacademy.ru/htmlcss/29/user/1160221).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
