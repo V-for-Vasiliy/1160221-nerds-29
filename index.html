@@ -137,14 +137,14 @@
           <h2>Напишите нам</h2>
           <form action="post" name="feedback-form">
             <label for="name-field">Ваше имя:</label>
-            <input type="text" id="name-field" name="name" value="Имя Фамилия">
+            <input type="text" required autofocus id="name-field" name="name" placeholder="Имя Фамилия">
             <label for="email-field">Ваш email:</label>
-            <input type="text" id="email-field" name="email" value="email@example.com ">
-            <br> <!--в тренажерах используется br-->
+            <input type="email" required id="email-field" name="email" placeholder="email@example.com">
+            <!--в тренажерах используется br-->
             <label for="message-field">Текст письма:</label>
-            <br> <!--в тренажерах используется br-->
-            <textarea name="message" id="message-field" cols="62" rows="10">В свободной форме</textarea>
-            <br> <!--в тренажерах используется br-->
+            <!--в тренажерах используется br-->
+            <textarea name="message" required id="message-field" cols="62" rows="10" placeholder="В свободной форме"></textarea>
+            <!--в тренажерах используется br-->
             <input type="submit" value="Отправить">
           </form>
         </section>
