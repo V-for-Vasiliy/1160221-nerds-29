@@ -1,0 +1,27 @@
+/* Variables */
+:root {
+    --basic-text-color: #000000;
+    --basic-text-hover-color: rgba(0, 0, 0, 0.3);
+    --light-text-color: #283136;
+    --lighter-text-color: #666666;
+    --social-text-color: #444444;
+    --button-text-color: #ffffff;
+    --button-text-hover-color: rgba(255, 255, 255, 0.3);
+
+    --ui-base-color :#EEEEEE;
+    --ui-elements-color: rgba(77, 77, 77, 0.4);
+    --ui-elements-noalpha-color: #A6A6A6;
+    --social-color: #E1E1E1;
+
+    --accent-color: #FB565A;
+    --accent-hover-color: #E74246;
+    --accent-active-color: #D7373B;
+
+    --success-color: #00CA74;
+    --success-hover-color: #00BC6C;
+    --success-active-color: #00AA62;
+
+    --attention-color: #EFC849;
+    --attention-hover-color: #EAB534;
+    --attention-active-color: #E5A722;
+}
