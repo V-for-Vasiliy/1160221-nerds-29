@@ -1,11 +1,12 @@
 /* Variables */
+
 :root {
     --basic-text-color: #000000;
-    --basic-text-hover-color: rgba(0, 0, 0, 0.3);
+    --basic-text-active-color: rgba(0, 0, 0, 0.3);
     --light-text-color: #283136;
     --lighter-text-color: #666666;
     --social-text-color: #444444;
-    --button-text-color: #ffffff;
+    --main-background-color: #ffffff;
     --button-text-hover-color: rgba(255, 255, 255, 0.3);
 
     --ui-base-color :#EEEEEE;
@@ -24,4 +25,325 @@
     --attention-color: #EFC849;
     --attention-hover-color: #EAB534;
     --attention-active-color: #E5A722;
+}
+
+
+/* Global */
+
+.page {
+    min-width: 1160px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--basic-text-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--basic-text-color);
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.hidden-title {
+    display: none;
+}
+
+
+/* Buttons */
+
+.button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+
+    border-radius: 3px;
+
+    padding-top: 17px;
+    padding-bottom: 15px;
+    /* padding-left padding-right меньше 40px не встречается */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.button:hover {
+    background-color: var(--accent-hover-color);
+}
+
+.button:active {
+    background-color: var(--accent-active-color);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: var(--button-text-hover-color);
+}
+
+.app-button {
+    background-color: var(--success-color);
+}
+
+.app-button:hover {
+    background-color: var(--success-hover-color);
+}
+
+.app-button:active {
+    background-color: var(--success-active-color);
+}
+
+.presentation-button {
+    background-color: var(--attention-color) ;
+}
+
+.presentation-button:hover {
+    background-color: var(--attention-hover-color) ;
+}
+
+.presentation-button:active {
+    background-color: var(--attention-active-color) ;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-text-color);
+
+    background-color: var(--ui-base-color);
+}
+
+  .main-navigation a:hover {
+    color: var(--accent-color);
+}
+
+.main-navigation a:focus {
+    color: var(--basic-text-active-color);
+}
+
+  .navigation-list {
+      list-style: none;
+}
+
+
+/* Promo */
+
+.promo {
+    background-color: var(--ui-base-color);
+}
+
+.promo-slogan {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    color: var(--basic-text-color);
+}
+
+.promo-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--light-text-color);
+}
+
+
+/* Services */
+
+.services {
+    background-color: var(--main-background-color);
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-text-color);
+
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.services-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--light-text-color);
+}
+
+
+/* About */
+
+.about {
+    background-color: var(--main-background-color);
+}
+
+.about-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: var(--basic-text-color);
+}
+
+.about-caption,
+.statistic-caption {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--light-text-color);
+    text-transform: uppercase; 
+}
+
+.about-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--light-text-color);
+}
+
+.about-list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--light-text-color);
+
+    list-style: none;
+}
+
+.statistics-list {
+    list-style: none;
+}
+
+.statistics-value {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+.supertext {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.statistics-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--light-text-color);
+}
+
+
+/* Clients */
+
+.clients {
+    background-color: var(--main-background-color);
+}
+
+.clients-list {
+    list-style: none;
+}
+
+
+/* Footer */
+/* Contatcts */
+
+.footer-contacts {
+    background-image: url("https://via.placeholder.com/1440x416"); /* фон скрылся за фоном business-card */
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.business-card {
+    background-color: var(--main-background-color);
+}
+
+.business-card-caption {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-text-color);
+}
+
+.business-card-text,
+.contacts-phone {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--lighter-text-color);
+}
+
+/* Social */
+
+.footer-social {
+    background-color: var(--main-background-color);
+}
+
+
+.social-caption {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-text-color);
+}
+
+.social-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--social-text-color);
+}
+
+.social-list {
+    list-style: none;
+}
+
+.social-button {
+    background-color: var(--social-color);
+}
+
+
+/* Modal */
+
+.modal {
+    background-color: var(--main-background-color);
+}
+
+.modal-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--basic-text-color);
+}
+
+.form-label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-text-color); 
 }
