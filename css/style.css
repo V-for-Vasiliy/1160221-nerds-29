@@ -165,7 +165,6 @@ a {
 }
 
 .services-title{
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -176,7 +175,6 @@ a {
 }
 
 .services-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -191,7 +189,6 @@ a {
 }
 
 .about-title {
-    font-style: normal;
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
@@ -208,7 +205,6 @@ a {
 }
 
 .about-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -216,7 +212,6 @@ a {
 }
 
 .about-list {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -230,21 +225,18 @@ a {
 }
 
 .statistics-value {
-    font-style: normal;
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
 }
 
 .supertext {
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 40px;
 }
 
 .statistics-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -278,7 +270,6 @@ a {
 }
 
 .business-card-caption {
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -288,7 +279,6 @@ a {
 
 .business-card-text,
 .contacts-phone {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -303,7 +293,6 @@ a {
 
 
 .social-caption {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
@@ -311,7 +300,6 @@ a {
 }
 
 .social-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -334,7 +322,6 @@ a {
 }
 
 .modal-title {
-    font-style: normal;
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
@@ -342,7 +329,6 @@ a {
 }
 
 .form-label {
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
