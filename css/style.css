@@ -141,7 +141,6 @@ a {
 
 .promo-slogan {
     font-size: 55px;
-    font-weight: 500;
     line-height: 55px;
     color: var(--basic-text-color);
 }
@@ -165,7 +164,6 @@ a {
 }
 
 .services-title{
-    font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-text-color);
@@ -197,22 +195,23 @@ a {
 
 .about-caption,
 .statistic-caption {
-    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
     text-transform: uppercase; 
 }
 
+.statistic-caption {
+    font-weight: 700; /* по умолчанию bolder */
+}
+
 .about-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
 }
 
 .about-list {
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
@@ -237,7 +236,6 @@ a {
 }
 
 .statistics-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     color: var(--light-text-color);
@@ -279,7 +277,6 @@ a {
 
 .business-card-text,
 .contacts-phone {
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     color: var(--lighter-text-color);
@@ -300,7 +297,6 @@ a {
 }
 
 .social-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: var(--social-text-color);
@@ -322,7 +318,6 @@ a {
 }
 
 .modal-title {
-    font-weight: 700;
     font-size: 45px;
     line-height: 53px;
     color: var(--basic-text-color);
