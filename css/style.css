@@ -147,7 +147,7 @@ a {
 }
 
 .promo-text {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
@@ -166,7 +166,7 @@ a {
 
 .services-title{
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-text-color);
@@ -177,7 +177,7 @@ a {
 
 .services-text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
@@ -200,7 +200,7 @@ a {
 
 .about-caption,
 .statistic-caption {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
@@ -209,7 +209,7 @@ a {
 
 .about-text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
@@ -217,7 +217,7 @@ a {
 
 .about-list {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
@@ -231,21 +231,21 @@ a {
 
 .statistics-value {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 45px;
     line-height: 64px;
 }
 
 .supertext {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 40px;
 }
 
 .statistics-text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     color: var(--light-text-color);
@@ -279,7 +279,7 @@ a {
 
 .business-card-caption {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
@@ -289,7 +289,7 @@ a {
 .business-card-text,
 .contacts-phone {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     color: var(--lighter-text-color);
@@ -304,7 +304,7 @@ a {
 
 .social-caption {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 36px;
     color: var(--basic-text-color);
@@ -312,7 +312,7 @@ a {
 
 .social-text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: var(--social-text-color);
@@ -335,7 +335,7 @@ a {
 
 .modal-title {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 45px;
     line-height: 53px;
     color: var(--basic-text-color);
@@ -343,7 +343,7 @@ a {
 
 .form-label {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-text-color); 
