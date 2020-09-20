@@ -43,6 +43,7 @@ a {
 }
 
 .visually-hidden {
+    /* Временное решение. Жду лекцию по доступности */
     display: none;
 }
 
@@ -114,7 +115,7 @@ a {
     background-color: var(--ui-base-color);
 }
 
-  .main-navigation a:hover {
+.main-navigation a:hover {
     color: var(--accent-color);
 }
 
@@ -122,8 +123,8 @@ a {
     color: var(--basic-text-active-color);
 }
 
-  .navigation-list {
-      list-style: none;
+.navigation-list {
+    list-style: none;
 }
 
 .navigation-link {
