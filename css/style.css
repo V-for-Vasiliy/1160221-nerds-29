@@ -314,6 +314,7 @@ a {
 /* Modal */
 
 .modal {
+    display: none; /* Тут не уверен что правильно. Временно, до лекции о скрытии */
     background-color: var(--main-background-color);
 }
 
