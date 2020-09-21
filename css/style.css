@@ -3,6 +3,7 @@
 :root {
     --basic-text-color: #000000;
     --basic-text-active-color: rgba(0, 0, 0, 0.3);
+    --basic-text-hover-color: rgba(0, 0, 0, 0.6);
     --light-text-color: #283136;
     --lighter-text-color: #666666;
     --social-text-color: #444444;
@@ -10,6 +11,9 @@
     --button-text-hover-color: rgba(255, 255, 255, 0.3);
 
     --ui-base-color: #EEEEEE;
+    --ui-hover-color: #DFDFDF;
+    --ui-active-color: #D5D5D5;
+    --ui-border-color: #DBDBDB;
     --ui-elements-color: rgba(77, 77, 77, 0.4);
     --ui-elements-noalpha-color: #A6A6A6;
     --social-color: #E1E1E1;
@@ -101,6 +105,23 @@ a {
 .presentation-button:active {
     background-color: var(--attention-active-color) ;
 }
+
+.filter-button {
+    border: none;
+
+    background-color: var(--ui-base-color);
+    color: var(--basic-text-color);
+}
+
+.filter-button:hover {
+    background-color: var(--ui-hover-color);
+}
+
+.filter-button:active {
+    background-color: var(--ui-active-color);
+    color: var(--basic-text-active-color)
+}
+
 
 
 /* Main navigation */
@@ -310,11 +331,24 @@ a {
     background-color: var(--social-color);
 }
 
+.social-button:hover {
+    background-color: var(--accent-hover-color); /* в макете бессмысленный градиент из одинаковых цветов + белый */
+}
+
+.social-button:active {
+    background-color: var(--accent-active-color); /* в макете бессмысленный градиент из одинаковых цветов + белый */
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-icon:active {
+    opacity: 0.3;
+}
+
 
 /* Modal */
 
 .modal {
-    display: none; /* Тут не уверен что правильно. Временно, до лекции о скрытии */
+    display: none;
     background-color: var(--main-background-color);
 }
 
@@ -329,4 +363,97 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-text-color); 
+}
+
+
+/* Catalog */
+/* Template-shop */
+
+.sort-list,
+.template-list,
+.pagination-list {
+    list-style: none;
+}
+
+.sort-link,
+.range-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-text-active-color);
+}
+
+.sort-link:hover,
+.range-button:hover {
+    color: var(--basic-text-hover-color);
+}
+
+.sort-link:active,
+.range-button:active {
+    color: var(--basic-text-color);
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+
+    background-color: var(--ui-base-color);
+}
+
+.shop-title {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.template-description {
+    background-color: var(--ui-base-color);
+}
+
+.template-description h3:hover {
+    color: var(--accent-color);
+}
+
+.template-description h3:active {
+    color: var(--basic-text-hover-color);
+}
+
+.template-title {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.template-text {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--lighter-text-color);
+}
+
+.pagination-link {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-text-color);
+
+    background-color: var(--ui-base-color);
+    border-radius: 3px;
+}
+
+.pagination-link:hover {
+    background-color: var(--ui-hover-color);
+}
+
+.pagination-link:active {
+    background-color: var(--ui-hover-color);
+    color: var(--basic-text-active-color);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-link-current {
+    background-color: transparent;
+    /* в макете обводка inner, не смог найти такого свойства в инете :( */
+    border: solid var(--ui-border-color) 3px;
 }
