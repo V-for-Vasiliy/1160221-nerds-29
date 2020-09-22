@@ -395,6 +395,11 @@ a {
     color: var(--basic-text-color);
 }
 
+.sort-link-active,
+.range-button-active {
+    color: var(--basic-text-color);
+}
+
 .main-title {
     font-weight: 500;
     font-size: 55px;
