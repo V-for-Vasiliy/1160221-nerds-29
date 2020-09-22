@@ -412,15 +412,16 @@ a {
     background-color: var(--ui-base-color);
 }
 
-.template-description h3:hover {
+.template-title a:hover {
     color: var(--accent-color);
 }
 
-.template-description h3:active {
+.template-title a:active {
     color: var(--basic-text-hover-color);
 }
 
-.template-title {
+.template-title a {
+    color: var(--basic-text-color);
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
