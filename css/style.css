@@ -461,6 +461,6 @@ a {
 
 .pagination-link-current {
     background-color: transparent;
-    /* в макете обводка inner, не смог найти такого свойства в инете :( */
+    /* обводка временно не соответствует макету, позже найду более подходящее решение*/
     border: solid var(--ui-border-color) 3px;
 }
