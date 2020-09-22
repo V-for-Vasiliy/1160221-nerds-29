@@ -16,6 +16,7 @@
     --ui-border-color: #DBDBDB;
     --ui-elements-color: rgba(77, 77, 77, 0.4);
     --ui-elements-noalpha-color: #A6A6A6;
+    --shadow-color: rgba(0, 1, 1, 0.1);
     --social-color: #E1E1E1;
 
     --accent-color: #FB565A;
@@ -328,21 +329,21 @@ a {
 }
 
 .social-button {
+    width: 81px;
+    height: 81px;
     background-color: var(--social-color);
 }
 
 .social-button:hover {
-    background-color: var(--accent-hover-color); /* в макете бессмысленный градиент из одинаковых цветов + белый */
+    background-color: var(--accent-hover-color);
 }
 
 .social-button:active {
-    background-color: var(--accent-active-color); /* в макете бессмысленный градиент из одинаковых цветов + белый */
+    background-color: var(--accent-active-color);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.social-icon:active {
-    opacity: 0.3;
-}
+/* иконки подключу на следующем шаге */
 
 
 /* Modal */
