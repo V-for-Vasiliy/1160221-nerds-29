@@ -16,7 +16,7 @@
     --ui-border-color: #DBDBDB;
     --ui-elements-color: rgba(77, 77, 77, 0.4);
     --ui-elements-noalpha-color: #A6A6A6;
-    --shadow-color: rgba(0, 1, 1, 0.1);
+    --inner-shadow-color: rgba(0, 1, 1, 0.1);
     --social-color: #E1E1E1;
 
     --accent-color: #FB565A;
@@ -79,7 +79,7 @@ a {
 
 .button:active {
     background-color: var(--accent-active-color);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--inner-shadow-color);
     color: var(--button-text-hover-color);
 }
 
@@ -340,7 +340,7 @@ a {
 
 .social-button:active {
     background-color: var(--accent-active-color);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--inner-shadow-color);
 }
 
 /* иконки подключу на следующем шаге */
@@ -451,7 +451,7 @@ a {
 .pagination-link:active {
     background-color: var(--ui-hover-color);
     color: var(--basic-text-active-color);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--inner-shadow-color);
 }
 
 .pagination-link-current {
