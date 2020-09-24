@@ -166,6 +166,53 @@ a {
     column-gap: 40px;
 }
 
+/*  Grid - Footer */
+
+.footer-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-rows: 416px 217px;
+}
+
+.contacts-wrapper,
+.social-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.contacts-wrapper {
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+.social-wrapper {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 169px;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.text-container {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.social-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 9px;
+    grid-column: 1;
+    grid-row: 1;
+
+    margin: 0;
+    padding-inline-start: 0;
+}
+
 
 /* Buttons */
 
@@ -399,14 +446,18 @@ a {
 /* Footer */
 /* Contatcts */
 
-.footer-contacts {
+.contacts {
     background-image: url("https://via.placeholder.com/1440x416"); 
-    background-size: 100% 100%;
-    background-position: 0 0;
+    background-size: 100% auto;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
 .business-card {
+    width: 319px;
+    height: 308px;
+    box-sizing: border-box;
+    padding: 50px;
     background-color: var(--main-background-color);
 }
 
@@ -427,7 +478,7 @@ a {
 
 /* Social */
 
-.footer-social {
+.social {
     background-color: var(--main-background-color);
 }
 
@@ -449,17 +500,19 @@ a {
     list-style: none;
 }
 
-.social-button {
+.social-item {
     width: 81px;
     height: 81px;
+    border-radius: 50%;
     background-color: var(--social-color);
 }
 
-.social-button:hover {
+
+.social-item:hover {
     background-color: var(--accent-hover-color);
 }
 
-.social-button:active {
+.social-item:active {
     background-color: var(--accent-active-color);
     box-shadow: inset 0px 3px 0px var(--inner-shadow-color);
 }
