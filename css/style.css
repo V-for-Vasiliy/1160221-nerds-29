@@ -66,6 +66,39 @@ a {
     align-content: start;
 }
 
+.main-navigation-wrapper {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content 1fr min-content;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+/* Main header */
+.main-header {
+    margin-bottom: 0;
+}
+
+/* Main navigation */
+.main-navigation {
+    display: grid;
+}
+
+/* Logo */
+.main-logo {
+    grid-column: 1;
+}
+
+/* Navigation list */
+.navigation-list {
+    grid-column: 3 / 4;
+    min-width: 437px;
+}
+
+/* Cart */
+.cart-link {
+    grid-column: -1;
+}
+
 
 /* Buttons */
 
@@ -161,6 +194,8 @@ a {
 
 .navigation-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation-link {
