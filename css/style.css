@@ -127,6 +127,28 @@ a {
     width: 300px;
 }
 
+/* Grid - About */
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    column-gap: 160px;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.statistic-container {
+    width: 360px;
+}
+
+.statistics-list {
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    column-gap: 20px;
+
+    padding-inline-start: 0;
+}
+
 
 /* Buttons */
 
