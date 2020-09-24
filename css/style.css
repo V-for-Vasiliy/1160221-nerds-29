@@ -59,12 +59,15 @@ a {
     height: 100%;
 }
 
+
 .page-body {
     height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 }
+
+/*  Grid - Main navigation */
 
 .main-navigation-wrapper {
     display: grid;
@@ -73,30 +76,35 @@ a {
     margin: 0 auto;
 }
 
-/* Main header */
 .main-header {
     margin-bottom: 0;
 }
 
-/* Main navigation */
 .main-navigation {
     display: grid;
 }
 
-/* Logo */
 .main-logo {
     grid-column: 1;
 }
 
-/* Navigation list */
 .navigation-list {
     grid-column: 3 / 4;
     min-width: 437px;
 }
 
-/* Cart */
 .cart-link {
     grid-column: -1;
+}
+
+/* Grid - Promo */
+
+.promo-wrapper {
+    display: grid;
+    width: 1160px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
 }
 
 
