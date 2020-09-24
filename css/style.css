@@ -278,14 +278,12 @@ a {
 /* Footer */
 /* Contatcts */
 
-/*
 .footer-contacts {
-    background-image: url("https://via.placeholder.com/1440x416"); все таки, я думаю, это контентное изображение
+    background-image: url("https://via.placeholder.com/1440x416"); 
     background-size: 100% 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
 }
-*/
 
 .business-card {
     background-color: var(--main-background-color);
