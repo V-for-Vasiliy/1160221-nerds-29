@@ -135,6 +135,8 @@ a {
     column-gap: 160px;
     width: 1160px;
     margin: 0 auto;
+    padding-top: 39px;
+    padding-bottom: 73px;
 }
 
 .statistic-container {
@@ -147,6 +149,21 @@ a {
     column-gap: 20px;
 
     padding-inline-start: 0;
+}
+
+/* Grid - Clients */
+
+.clients-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 46px;
+    padding-bottom: 44px;
+}
+
+.clients-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
 }
 
 
@@ -314,6 +331,9 @@ a {
     font-size: 45px;
     line-height: 45px;
     color: var(--basic-text-color);
+
+    padding: 0;
+    margin: 0;
 }
 
 .about-caption,
