@@ -131,6 +131,7 @@ a {
 }
 
 .statistics-list {
+    /* тут попробую флексы на следующем шаге */
     display: grid;
     grid-template-columns: min-content min-content min-content;
     column-gap: 20px;
@@ -418,7 +419,7 @@ a {
 
 .statistic-caption {
     text-align: center;
-    font-weight: 700; /* по умолчанию bolder */
+    font-weight: 700;
 }
 
 .statistic-caption::before {
@@ -556,7 +557,7 @@ a {
     box-shadow: inset 0px 3px 0px var(--inner-shadow-color);
 }
 
-/* иконки подключу на следующем шаге */
+/* иконки подключу на шаге «Декоративные элементы» */
 
 
 /* Modal */
