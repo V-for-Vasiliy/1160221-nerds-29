@@ -122,16 +122,12 @@ a {
 
 .about-wrapper {
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr 360px;
     column-gap: 160px;
     width: 1160px;
     margin: 0 auto;
     padding-top: 39px;
     padding-bottom: 73px;
-}
-
-.statistic-container {
-    width: 360px;
 }
 
 .statistics-list {
