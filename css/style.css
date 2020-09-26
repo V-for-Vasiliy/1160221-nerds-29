@@ -74,7 +74,7 @@ a {
     grid-template-columns: 1fr min-content 1fr;
     width: 1160px;
     align-items: center;
-    
+
     margin: 0 auto;
 }
 
@@ -95,8 +95,12 @@ a {
     display: grid;
     width: 1160px;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 760px;
     padding: 0;
+}
+
+.promo-description-container {
+    padding-top: 78px;
 }
 
 /* Grid - Services */
@@ -330,6 +334,8 @@ a {
     font-size: 55px;
     line-height: 55px;
     color: var(--basic-text-color);
+    margin-top: 0;
+    margin-bottom: 26px;
 }
 
 .promo-text {
@@ -337,6 +343,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
+    margin-bottom: 56px;
 }
 
 
