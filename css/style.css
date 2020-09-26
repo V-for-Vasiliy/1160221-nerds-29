@@ -123,11 +123,11 @@ a {
 .about-wrapper {
     display: grid;
     grid-template-columns: 1fr 360px;
-    column-gap: 160px;
+    column-gap: 140px;
     width: 1160px;
     margin: 0 auto;
     padding-top: 39px;
-    padding-bottom: 73px;
+    padding-bottom: 46px;
 }
 
 .statistics-list {
@@ -136,6 +136,11 @@ a {
     column-gap: 20px;
 
     padding: 0;
+}
+
+.about-description-container {
+    /* не знаю как лучше, тут или у заголовка */
+    padding-top: 36px;
 }
 
 /* Grid - Clients */
@@ -396,6 +401,7 @@ a {
 
     padding: 0;
     margin: 0;
+    margin-bottom: 33px;
 }
 
 .about-caption,
@@ -406,26 +412,43 @@ a {
     text-transform: uppercase; 
 }
 
+.about-caption {
+    margin-bottom: 11px;
+}
+
 .statistic-caption {
+    text-align: center;
     font-weight: 700; /* по умолчанию bolder */
+}
+
+.statistic-caption::before {
+    display: block;
+    content: url("https://via.placeholder.com/360x208");
+    width: 360px;
+    height: 208px;
+    margin-bottom: 38px;
 }
 
 .about-text {
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
+    margin-bottom: 41px;
 }
 
 .about-list {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 48px;
     color: var(--light-text-color);
 
     list-style: none;
+    margin: 0;
+    padding-left: 35px;
 }
 
 .statistics-list {
     list-style: none;
+    margin-top: 32px;
 }
 
 .statistics-value {
@@ -444,6 +467,7 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: var(--light-text-color);
+    margin-top: 10px;
 }
 
 
