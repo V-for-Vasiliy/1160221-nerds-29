@@ -71,8 +71,10 @@ a {
 
 .main-navigation-wrapper {
     display: grid;
-    grid-template-columns: min-content 1fr min-content 1fr min-content;
+    grid-template-columns: 1fr min-content 1fr;
     width: 1160px;
+    align-items: center;
+    
     margin: 0 auto;
 }
 
@@ -80,24 +82,12 @@ a {
     margin-bottom: 0;
 }
 
-.main-navigation {
-    display: grid;
-}
-
-.main-logo {
-    grid-column: 1;
-}
-
 .navigation-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; /* не уверен, сделал для красоты :) */
-    grid-column: 3 / 4;
-    min-width: 437px;
+    column-gap: 45px;
 }
 
-.cart-link {
-    grid-column: -1;
-}
 
 /* Grid - Promo */
 
@@ -323,6 +313,10 @@ a {
 .navigation-link {
     text-decoration: none;
     color: var(--basic-text-color);
+}
+
+.cart-link {
+    text-align: right;
 }
 
 
