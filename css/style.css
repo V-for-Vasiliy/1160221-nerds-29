@@ -84,10 +84,9 @@ a {
 
 .navigation-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* не уверен, сделал для красоты :) */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Решение на гридах. Позже сделаю на флексах */
     column-gap: 45px;
 }
-
 
 /* Grid - Promo */
 
@@ -114,13 +113,9 @@ a {
 
 .services-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 300px 300px 300px;
     column-gap: 100px;
     padding: 0;
-}
-
-.services-item {
-    width: 300px;
 }
 
 /* Grid - About */
