@@ -208,6 +208,8 @@ a {
 /* Buttons */
 
 .button {
+    display: inline-block; /* тут не уверен, чтобы считать отступы до кнопки, а не до текста внутри */
+
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -338,7 +340,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
-    margin-bottom: 56px;
+    margin-bottom: 39px;
 }
 
 
@@ -350,12 +352,15 @@ a {
 
 .services-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.services-title{
+.services-title {
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-text-color);
+    margin-bottom: 16px;
 
     align-items: center;
     text-transform: uppercase;
@@ -366,10 +371,20 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: var(--light-text-color);
+    margin-top: 0;
+    margin-bottom: 33px;
 
     width: 260px;
 }
 
+.services-item::before {
+    /* временно общий класс, подключил для удобства добавления отступов */
+    display: block;
+    content: url("https://via.placeholder.com/300x146");
+    background-color: var(--accent-color);
+    width: 300px;
+    height: 146px;
+}
 
 /* About */
 
