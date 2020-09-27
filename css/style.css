@@ -214,6 +214,8 @@ a {
 .button {
     display: inline-block; /* тут не уверен, чтобы считать отступы до кнопки, а не до текста внутри */
 
+    vertical-align: middle;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
