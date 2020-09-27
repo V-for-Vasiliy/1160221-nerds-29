@@ -71,7 +71,7 @@ a {
 
 .main-navigation-wrapper {
     display: grid;
-    grid-template-columns: 1fr min-content 1fr;
+    grid-template-columns: min-content 1fr min-content;
     width: 1160px;
     align-items: center;
 
@@ -84,8 +84,9 @@ a {
 
 .navigation-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Решение на гридах. Позже сделаю на флексах */
+    grid-template-columns: min-content min-content min-content min-content; /* Решение на гридах. Позже сделаю на флексах */
     column-gap: 45px;
+    margin: 0 auto;
 }
 
 /* Grid - Promo */
@@ -314,16 +315,11 @@ a {
 .navigation-list {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .navigation-link {
     text-decoration: none;
     color: var(--basic-text-color);
-}
-
-.cart-link {
-    text-align: right;
 }
 
 
@@ -384,7 +380,6 @@ a {
 }
 
 .services-item::before {
-    /* временно общий класс, подключил для удобства добавления отступов */
     display: block;
     content: url("https://via.placeholder.com/300x146");
     background-color: var(--accent-color);
