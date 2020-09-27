@@ -141,7 +141,6 @@ a {
 }
 
 .about-description-container {
-    /* не знаю как лучше, тут или у заголовка */
     padding-top: 36px;
 }
 
@@ -213,7 +212,7 @@ a {
 /* Buttons */
 
 .button {
-    display: inline-block; /* тут не уверен, чтобы считать отступы до кнопки, а не до текста внутри */
+    display: inline-block;
 
     vertical-align: middle;
 
@@ -381,7 +380,7 @@ a {
 
 .services-item::before {
     display: block;
-    content: url("https://via.placeholder.com/300x146");
+    content: url("https://via.placeholder.com/300x146"); /* на шаге «Деркоративные элементы» подключу картинки для каждого блока */
     background-color: var(--accent-color);
     width: 300px;
     height: 146px;
