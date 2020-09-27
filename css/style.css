@@ -149,14 +149,15 @@ a {
 .clients-wrapper {
     width: 1160px;
     margin: 0 auto;
-    padding-top: 46px;
-    padding-bottom: 44px;
+    padding-top: 30px;
+    padding-bottom: 24px;
 }
 
 .clients-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 40px;
+    align-items: center;
 }
 
 /*  Grid - Footer */
@@ -185,7 +186,7 @@ a {
 .social-wrapper {
     display: grid;
     grid-template-columns: min-content 1fr;
-    column-gap: 169px;
+    column-gap: 139px;
     padding-top: 68px;
     padding-bottom: 68px;
 }
@@ -193,6 +194,7 @@ a {
 .text-container {
     grid-column: 2;
     grid-row: 1;
+    padding-top: 8px;
 }
 
 .social-list {
@@ -476,6 +478,7 @@ a {
 
 .clients {
     background-color: var(--main-background-color);
+    margin-bottom: 82px;
 }
 
 .clients-list {
@@ -534,6 +537,7 @@ a {
     font-size: 16px;
     line-height: 22px;
     color: var(--social-text-color);
+    margin-top: 8px;
 }
 
 .social-list {
