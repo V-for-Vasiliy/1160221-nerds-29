@@ -209,7 +209,7 @@ a {
 }
 
 
-/*  Grid - Catalog title */
+/*  Grid - Catalog */
 
 .mian-title-container {
     background-color: var(--ui-base-color);
@@ -222,6 +222,29 @@ a {
     padding-bottom: 108px;
 }
 
+.catalog-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 140px;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+}
+
+.template-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    column-gap: 40px;
+    row-gap: 30px;
+}
 
 /* Buttons */
 
@@ -602,6 +625,8 @@ a {
 .template-list,
 .pagination-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .sort-link,
