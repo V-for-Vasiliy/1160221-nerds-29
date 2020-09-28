@@ -238,12 +238,54 @@ a {
     grid-template-rows: max-content 1fr max-content;
 }
 
+.sort-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+
+    padding-top: 36px;
+    padding-bottom: 32px;
+}
+
+.list-and-range-container {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    align-items: center;
+}
+
+.sort-list {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    column-gap: 25px;
+}
+
+.sort-range {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+}
+
 .template-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: max-content max-content;
+    grid-template-rows: 619px 619px 619px; /* 1fr и max-content получаются разными по высоте и к низу макет не сходится */
     column-gap: 40px;
-    row-gap: 30px;
+    row-gap: 31px;
+}
+
+.template-shop {
+    padding-top: 36px;
+}
+
+.pagination {
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+
+.pagination-list {
+    display: grid;
+    grid-template-columns: 50px 50px 50px max-content;
+    column-gap: 11px;
 }
 
 /* Buttons */
@@ -638,6 +680,13 @@ a {
     color: var(--basic-text-active-color);
 }
 
+.range-button::before {
+    display: block;
+    content: url("https://via.placeholder.com/11x10"); /* на шаге «Деркоративные элементы» подключу картинки */
+    width: 11px;
+    height: 10px;  
+}
+
 .sort-link:hover,
 .range-button:hover {
     color: var(--basic-text-hover-color);
@@ -668,6 +717,13 @@ a {
     text-transform: uppercase;
 }
 
+.template-item::before {
+    display: block;
+    content: url("https://via.placeholder.com/360x40"); /* на шаге «Деркоративные элементы» подключу картинки */
+    width: 360px;
+    height: 40px;  
+}
+
 .template-description {
     background-color: var(--ui-base-color);
 }
@@ -694,6 +750,10 @@ a {
 }
 
 .pagination-link {
+    display: inline-block;
+
+    vertical-align: middle;
+
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
@@ -701,6 +761,11 @@ a {
 
     background-color: var(--ui-base-color);
     border-radius: 3px;
+
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px ;
+    padding-right: 20px ;
 }
 
 .pagination-link:hover {
@@ -715,6 +780,12 @@ a {
 
 .pagination-link-current {
     background-color: transparent;
-    /* обводка временно не соответствует макету, позже найду более подходящее решение*/
-    border: solid var(--ui-border-color) 3px;
+    border-radius: 3px; /* не работает :( */
+    outline: solid var(--ui-border-color) 3px;
+    outline-offset: -3px;
+}
+
+.pagination-next {
+    padding-left: 78px;
+    padding-right: 78px; /* в макете 77px */
 }
