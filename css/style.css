@@ -209,6 +209,20 @@ a {
 }
 
 
+/*  Grid - Catalog title */
+
+.mian-title-container {
+    background-color: var(--ui-base-color);
+}
+
+.main-title-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 78px;
+    padding-bottom: 108px;
+}
+
+
 /* Buttons */
 
 .button {
@@ -618,8 +632,9 @@ a {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
-
-    background-color: var(--ui-base-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .shop-title {

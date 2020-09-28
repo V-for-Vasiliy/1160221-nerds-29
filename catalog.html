@@ -10,20 +10,28 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
-        </a>
-        <ul class="navigation-list">
-          <li><a class="navigation-link" href="index.html">Студия</a></li>
-          <li><a class="navigation-link" href="#">Клиенты</a></li>
-          <li><a class="navigation-link" href="#">Магазин</a></li>
-          <li><a class="navigation-link" href="#">Контакты</a></li>
-        </ul>
-        <a class="navigation-link cart-link" href="#">Корзина</a>
+       <div class="main-header-bar">
+         <div class="main-navigation-wrapper">
+            <a class="main-logo" href="index.html">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
+            </a>
+            <ul class="navigation-list">
+              <li><a class="navigation-link" href="index.html">Студия</a></li>
+              <li><a class="navigation-link" href="#">Клиенты</a></li>
+              <li><a class="navigation-link" href="#">Магазин</a></li>
+              <li><a class="navigation-link" href="#">Контакты</a></li>
+            </ul>
+            <a class="navigation-link cart-link" href="#">Корзина</a>
+         </div>
+       </div>
       </nav>
     </header>
     <main class="container">
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
+      <div class="mian-title-container">
+        <div class="main-title-wrapper">
+          <h1 class="main-title">Магазин готовых шаблонов</h1>
+        </div>
+      </div>
       <section class="template-shop">
         <h2 class="visually-hidden">Тут будут фильтры</h2> <!-- Скрытый заголовок -->
         <h3 class="shop-title">Стоимость:</h3>
@@ -54,7 +62,7 @@
         <ul class="template-list">
           <li class="template-item">
             <article>
-              <div class="template-description">
+              <div class="visually-hidden template-description">
                 <h3 class="template-title"><a href="#">Sedona</a></h3>
                 <p class="template-text">Информационный сайт для туристов</p>
                 <a class="button" href="#">9 900 ₽</a>
@@ -64,7 +72,7 @@
           </li>
           <li class="template-item">
             <article>
-              <div class="template-description">
+              <div class="visually-hidden template-description">
                 <h3 class="template-title"><a href="#">Pink App</a></h3>
                 <p class="template-text">Продуктовый лендинг приложения для iOS и&nbsp;Android</p>
                 <a class="button" href="#">9 900 ₽</a>
@@ -74,7 +82,7 @@
           </li>
           <li class="template-item">
             <article>
-              <div class="template-description">
+              <div class="visually-hidden template-description">
                 <h3 class="template-title"><a href="#">Barbershop</a></h3>
                 <p class="template-text">Сайт салона красоты. Для мужчин, да.</p>
                 <a class="button" href="#">9 900 ₽</a>
@@ -84,7 +92,7 @@
           </li>
           <li class="template-item">
             <article>
-              <div class="template-description">
+              <div class="visually-hidden template-description">
                 <h3 class="template-title"><a href="#">MISHKA</a></h3>
                 <p class="template-text">Интернет-магазин вязаных игрушек</p>
                 <a class="button" href="#">9 900 ₽</a>
@@ -94,7 +102,7 @@
           </li>
           <li class="template-item">
             <article>
-              <div class="template-description">
+              <div class="visually-hidden template-description">
                 <h3 class="template-title"><a href="#">A Plus</a></h3>
                 <p class="template-text">Лендинг курсов повышения квалификации</p>
                 <a class="button" href="#">9 900 ₽</a>
@@ -104,7 +112,7 @@
           </li>
           <li class="template-item">
             <article>
-              <div class="template-description">
+              <div class="visually-hidden template-description">
                 <h3 class="template-title"><a href="#">КВАСТ</a></h3>
                 <p class="template-text">Промо-сайт производителя крафтового кваса</p>
                 <a class="button" href="#">9 900 ₽</a>
@@ -126,36 +134,44 @@
     <footer class="page-footer main-footer">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2> <!--скрытый заголовок-->
-        <div class="footer-contacts">
-          <article class="business-card">
-            <h3 class="visually-hidden">Визитная карточка</h3> <!--скрытый заголовок-->
-            <strong class="business-card-caption">NЁRDS DESIGN STUDIO</strong>
-            <p class="business-card-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="business-card-text"><a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-            <a class="button" href="#">Напишите нам</a>
-          </article>
-          <!-- тут будет карта -->
-        </div>
-        <div class="footer-social">
-          <strong class="social-caption">Давайте дружить, это выгодно!</strong>
-          <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-button social-button-vkontakte" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-button social-button-facebook" href="#">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-button social-button-instagram" href="#">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-container">
+          <div class="contacts">
+           <div class="contacts-wrapper">
+              <article class="business-card">
+                <h3 class="visually-hidden">Визитная карточка</h3> <!--скрытый заголовок-->
+                <strong class="business-card-caption">NЁRDS DESIGN STUDIO</strong>
+                <p class="business-card-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p class="business-card-text"><a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+                <a class="button" href="#">Напишите нам</a>
+              </article>
+           </div>
+            <!-- тут будет карта -->
+          </div>
+          <div class="social">
+            <div class="social-wrapper">
+              <div class="text-container">
+                <strong class="social-caption">Давайте дружить, это выгодно!</strong>
+                <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
+              </div>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a class="social-button social-button-vkontakte" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-button social-button-facebook" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-button social-button-instagram" href="#">
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </footer>
