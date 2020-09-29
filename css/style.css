@@ -266,13 +266,16 @@ a {
 .template-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 619px 619px 619px; /* 1fr и max-content получаются разными по высоте и к низу макет не сходится */
     column-gap: 40px;
     row-gap: 31px;
 }
 
 .template-shop {
     padding-top: 36px;
+}
+
+.template-preview {
+    display: block;
 }
 
 .pagination {
