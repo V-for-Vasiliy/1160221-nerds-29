@@ -272,7 +272,7 @@ a {
 }
 
 .pagination {
-    padding-top: 55px;
+    padding-top: 50px;
     padding-bottom: 60px;
 }
 
@@ -717,7 +717,7 @@ a {
 
 .template-item::before {
     display: block;
-    content: url("https://via.placeholder.com/360x40"); /* на шаге «Деркоративные элементы» подключу картинки */
+    content: url("https://via.placeholder.com/360x40"); /* на шаге «Деркоративные элементы» продумаю как сделать этот элемент */
     width: 360px;
     height: 40px;  
 }
