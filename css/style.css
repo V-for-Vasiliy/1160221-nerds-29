@@ -223,14 +223,12 @@ a {
 }
 
 .catalog-wrapper {
-    width: 1160px;
-    margin: 0 auto;
-}
-
-.catalog-container {
     display: grid;
     grid-template-columns: 260px 1fr;
     column-gap: 140px;
+
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .shop-content {
