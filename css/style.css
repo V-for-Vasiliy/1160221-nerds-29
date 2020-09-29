@@ -760,30 +760,44 @@ a {
     background-color: var(--ui-base-color);
     border-radius: 3px;
 
-    padding-top: 17px;
-    padding-bottom: 15px;
-    padding-left: 20px ;
-    padding-right: 20px ;
+    border: 3px solid var(--ui-base-color);
+
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .pagination-link:hover {
     background-color: var(--ui-hover-color);
+    border: 3px solid var(--ui-hover-color);
 }
 
 .pagination-link:active {
     background-color: var(--ui-hover-color);
+    /* border: 3px solid var(--ui-hover-color); */
+    border: 0;
     color: var(--basic-text-active-color);
     box-shadow: inset 0px 3px 0px var(--inner-shadow-color);
+
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .pagination-link-current {
     background-color: transparent;
     border-radius: 3px; /* не работает :( */
-    outline: solid var(--ui-border-color) 3px;
-    outline-offset: -3px;
+    border: 3px solid var(--ui-border-color);
 }
 
 .pagination-next {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.pagination-next:active {
     padding-left: 78px;
-    padding-right: 78px; /* в макете 77px */
+    padding-right: 78px;
 }
