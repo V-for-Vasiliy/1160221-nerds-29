@@ -234,7 +234,7 @@ a {
 
 .sort-container {
     display: grid;
-    grid-template-columns: 360px 1fr 40px;;
+    grid-template-columns: 360px 1fr 40px;
     column-gap: 40px;
 
     padding-top: 36px;
@@ -768,7 +768,7 @@ a {
 }
 
 .template-item:hover .template-description {
-    opacity: 100;
+    opacity: 1;
 }
 
 .template-description {
