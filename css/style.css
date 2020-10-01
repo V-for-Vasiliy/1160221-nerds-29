@@ -267,8 +267,31 @@ a {
     padding-top: 36px;
 }
 
+.template-item {
+    position: relative;
+}
+
 .template-preview {
     display: block;
+    z-index: 1;
+}
+
+.template-description {
+    text-align: center;
+
+    height: 231px;
+    padding-top: 26px;
+    padding-bottom: 44px;
+    padding-left: 52px;
+    padding-right: 52px;
+
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
 }
 
 .pagination {
@@ -354,6 +377,12 @@ a {
 .filter-button:active {
     background-color: var(--ui-active-color);
     color: var(--basic-text-active-color)
+}
+
+.price-button {
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
@@ -726,6 +755,10 @@ a {
     background-color: var(--ui-base-color);
 }
 
+.template-title {
+    margin: 0;
+}
+
 .template-title a:hover {
     color: var(--accent-color);
 }
@@ -745,6 +778,9 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: var(--lighter-text-color);
+
+    margin-top: 10px;
+    margin-bottom: 34px;
 }
 
 .pagination-link {
