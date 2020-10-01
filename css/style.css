@@ -4,6 +4,7 @@
     --basic-text-color: #000000;
     --basic-text-active-color: rgba(0, 0, 0, 0.3);
     --basic-text-hover-color: rgba(0, 0, 0, 0.6);
+    --hover-shadow-color: rgba(0, 1, 1, 0.25);
     --light-text-color: #283136;
     --lighter-text-color: #666666;
     --social-text-color: #444444;
@@ -274,9 +275,16 @@ a {
 .template-preview {
     display: block;
     z-index: 1;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .template-description {
+    opacity: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
     text-align: center;
 
     height: 231px;
@@ -744,11 +752,23 @@ a {
     text-transform: uppercase;
 }
 
+.template-item {
+    border-radius: 5px;
+}
+
+.template-item:hover {
+    box-shadow: 0px 6px 15px var(--hover-shadow-color);
+}
+
 .template-item::before {
     display: block;
     content: url("https://via.placeholder.com/360x40"); /* на шаге «Деркоративные элементы» продумаю как сделать этот элемент */
     width: 360px;
     height: 40px;  
+}
+
+.template-item:hover .template-description {
+    opacity: 100;
 }
 
 .template-description {
