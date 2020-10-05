@@ -139,12 +139,14 @@ a {
 }
 
 .statistics-list {
-    /* тут попробую флексы на следующем шаге */
-    display: grid;
-    grid-template-columns: min-content min-content min-content;
-    column-gap: 20px;
+    display: flex;
+    justify-content: space-between;
 
     padding: 0;
+}
+
+.statistics-item {
+    flex-basis: 33%;
 }
 
 .about-description-container {
@@ -538,6 +540,7 @@ a {
 }
 
 .statistic-caption {
+    display: block;
     text-align: center;
     font-weight: 700;
 }
