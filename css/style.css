@@ -219,11 +219,7 @@ a {
 }
 
 .social-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 9px;
-    grid-column: 1;
-    grid-row: 1;
+    display: flex;
 
     margin: 0;
     padding: 0;
@@ -690,6 +686,12 @@ a {
     height: 81px;
     border-radius: 50%;
     background-color: var(--social-color);
+
+    margin-right: 9px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
 }
 
 
