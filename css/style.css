@@ -68,11 +68,10 @@ a {
     align-content: start;
 }
 
-/*  Grid - Main navigation */
+/*  Layout - Main navigation */
 
 .main-navigation-wrapper {
-    display: grid;
-    grid-template-columns: min-content 1fr min-content;
+    display: flex;
     width: 1160px;
     align-items: center;
 
@@ -84,10 +83,17 @@ a {
 }
 
 .navigation-list {
-    display: grid;
-    grid-template-columns: min-content min-content min-content min-content; /* Решение на гридах. Позже сделаю на флексах */
-    column-gap: 45px;
+    display: flex;
     margin: 0 auto;
+    margin-top: 5px;
+}
+
+.navigation-list .navigation-item {
+    margin-right: 45px;
+}
+
+.navigation-list .navigation-item:last-child {
+    margin: 0;
 }
 
 /* Grid - Promo */
@@ -429,6 +435,12 @@ a {
 .navigation-link {
     text-decoration: none;
     color: var(--basic-text-color);
+}
+
+.cart-link {
+    width: 155px;
+    text-align: right;
+    margin-top: 5px;
 }
 
 
