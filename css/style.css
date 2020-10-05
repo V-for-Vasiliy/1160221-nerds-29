@@ -195,6 +195,15 @@ a {
     padding-bottom: 54px;
 }
 
+.business-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.business-card .button {
+    margin-top: auto;
+}
+
 .social-wrapper {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -625,6 +634,7 @@ a {
     height: 308px;
     box-sizing: border-box;
     padding: 50px;
+    padding-bottom: 46px;
     background-color: var(--main-background-color);
 }
 
@@ -634,6 +644,8 @@ a {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--basic-text-color);
+
+    margin-bottom: 22px;
 }
 
 .business-card-text,
@@ -641,6 +653,11 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: var(--lighter-text-color);
+    margin: 0;
+}
+
+.business-card-text {
+    margin-bottom: 18px;
 }
 
 /* Social */
