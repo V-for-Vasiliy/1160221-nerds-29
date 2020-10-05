@@ -54,7 +54,7 @@ a {
 }
 
 
-/* Grid */
+/* Layout */
 
 .page {
     height: 100%;
@@ -96,7 +96,7 @@ a {
     margin: 0;
 }
 
-/* Grid - Promo */
+/* Layout - Promo */
 
 .promo-wrapper {
     display: grid;
@@ -110,7 +110,7 @@ a {
     padding-top: 78px;
 }
 
-/* Grid - Services */
+/* Layout - Services */
 
 .services-wrapper {
     width: 1160px;
@@ -126,7 +126,7 @@ a {
     padding: 0;
 }
 
-/* Grid - About */
+/* Layout - About */
 
 .about-wrapper {
     display: grid;
@@ -153,7 +153,7 @@ a {
     padding-top: 36px;
 }
 
-/* Grid - Clients */
+/* Layout - Clients */
 
 .clients-wrapper {
     width: 1160px;
@@ -172,7 +172,7 @@ a {
     margin: 0;
 }
 
-/*  Grid - Footer */
+/*  Layout - Footer */
 
 .footer-wrapper {
     width: 1160px;
@@ -226,7 +226,7 @@ a {
 }
 
 
-/*  Grid - Catalog */
+/*  Layout - Catalog */
 
 .mian-title-container {
     background-color: var(--ui-base-color);
