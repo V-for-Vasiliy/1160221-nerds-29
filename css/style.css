@@ -344,10 +344,17 @@ a {
 }
 
 .pagination-list {
-    display: grid;
-    grid-template-columns: 50px 50px 50px max-content;
-    column-gap: 11px;
+    display: flex;
 }
+
+.pagination-item {
+    margin-right: 12px;
+}
+
+.pagination-list .pagination-item:last-child {
+    margin-right: 0;
+}
+
 
 /* Buttons */
 
