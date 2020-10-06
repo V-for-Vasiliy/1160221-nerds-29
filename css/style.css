@@ -146,7 +146,8 @@ a {
 }
 
 .statistics-item {
-    flex-basis: 33%;
+    width: 0;
+    flex-grow: 1;
 }
 
 .about-description-container {
