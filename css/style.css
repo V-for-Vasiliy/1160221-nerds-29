@@ -257,14 +257,14 @@ a {
 }
 
 .shop-title {
-    margin-right: 267px;
+    flex-grow: 2;
 }
 
 .sort-list {
     display: flex;
 
     margin: auto 0;
-    margin-right: auto ;
+    margin-right: 50px;
 }
 
 .sort-list .sort-item:last-child {
