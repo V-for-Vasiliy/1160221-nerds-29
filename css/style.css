@@ -267,12 +267,13 @@ a {
     margin-right: 50px;
 }
 
-.sort-list .sort-item:last-child {
-    margin-right: 0;
-}
 
 .sort-item {
     margin-right: 25px;
+}
+
+.sort-list .sort-item:last-child {
+    margin-right: 0;
 }
 
 .sort-range {
