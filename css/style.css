@@ -258,6 +258,7 @@ a {
 
 .shop-title {
     flex-grow: 1;
+    margin-right: 40px;
 }
 
 .sort-list {
