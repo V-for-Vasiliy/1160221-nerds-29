@@ -448,6 +448,10 @@ a {
     height: 114px;
 }
 
+.main-logo:active svg path {
+    fill: var(--ui-elements-noalpha-color);
+}
+
 .main-navigation {
     font-size: 16px;
     font-weight: 500;
@@ -475,8 +479,19 @@ a {
 }
 
 .navigation-link {
+    position: relative;
     text-decoration: none;
     color: var(--basic-text-color);
+}
+
+.navigation-link-current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -21px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
 }
 
 .cart-link {
