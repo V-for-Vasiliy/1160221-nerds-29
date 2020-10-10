@@ -471,6 +471,7 @@ a {
 .navigation-list {
     list-style: none;
     padding: 0;
+    padding-right: 47px;
 }
 
 .navigation-link {
@@ -479,9 +480,20 @@ a {
 }
 
 .cart-link {
-    width: 155px;
+    position: relative;
+    width: 115px;
     text-align: right;
     margin-top: 5px;
+}
+
+.cart-link::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/cart-icon.svg");
+    left: 0px;
+    top: 8px;
 }
 
 
