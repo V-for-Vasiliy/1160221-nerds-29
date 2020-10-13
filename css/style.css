@@ -568,10 +568,26 @@ a {
     width: 260px;
 }
 
-.services-item::before {
+.services-item-web::before {
     display: block;
-    content: url("https://via.placeholder.com/300x146"); /* на шаге «Деркоративные элементы» подключу картинки для каждого блока */
+    content: url("../img/illustration-site.png"); 
     background-color: var(--accent-color);
+    width: 300px;
+    height: 146px;
+}
+
+.services-item-app::before {
+    display: block;
+    content: url("../img/illustration-app.png"); 
+    background-color: var(--success-color);
+    width: 300px;
+    height: 146px;
+}
+
+.services-item-presentation::before {
+    display: block;
+    content: url("../img/illustration-presentation.png"); 
+    background-color: var(--attention-color);
     width: 300px;
     height: 146px;
 }
