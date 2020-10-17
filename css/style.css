@@ -535,6 +535,11 @@ a {
     margin-bottom: 39px;
 }
 
+.promo-button {
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
 
 /* Services */
 
@@ -827,8 +832,6 @@ a {
 .social-item:active .social-button {
     opacity: 0.3;
 }
-
-/* иконки подключу на шаге «Декоративные элементы» */
 
 
 /* Modal */
