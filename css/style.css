@@ -13,6 +13,7 @@
 
     --ui-base-color: #EEEEEE;
     --ui-hover-color: #DFDFDF;
+    --ui-hover-dark-color: #4D4D4D;
     --ui-active-color: #D5D5D5;
     --ui-border-color: #DBDBDB;
     --ui-elements-color: rgba(77, 77, 77, 0.4);
@@ -629,7 +630,7 @@ a {
 
 .statistic-caption::before {
     display: block;
-    content: url("https://via.placeholder.com/360x208");
+    content: url("../img/nerds-illustration.png");
     width: 360px;
     height: 208px;
     margin-bottom: 38px;
@@ -643,6 +644,7 @@ a {
 }
 
 .about-list {
+    position: absolute;
     font-size: 16px;
     line-height: 48px;
     color: var(--light-text-color);
@@ -650,6 +652,16 @@ a {
     list-style: none;
     margin: 0;
     padding-left: 35px;
+}
+
+.about-item::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin-top: 5.5%;
 }
 
 .statistics-list {
@@ -686,6 +698,13 @@ a {
 
 .clients-list {
     list-style: none;
+}
+
+.clients-item::after {
+    content: "";
+    width: 2px;
+    height: 52px;
+    background-color: red;
 }
 
 
@@ -776,6 +795,37 @@ a {
 .social-item:active {
     background-color: var(--accent-active-color);
     box-shadow: inset 0px 3px 0px var(--inner-shadow-color);
+}
+
+.social-button-vkontakte {
+    background-image: url("../img/social/vk-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.social-button-facebook {
+    background-image: url("../img/social/fb-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.social-button-instagram {
+    background-image: url("../img/social/insta-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.social-item:active .social-button {
+    opacity: 0.3;
 }
 
 /* иконки подключу на шаге «Декоративные элементы» */
