@@ -827,8 +827,8 @@ a {
 /* Contatcts */
 
 .contacts {
-    background-image: url("https://via.placeholder.com/1440x416"); 
-    background-size: 100% auto;
+    background-image: url("../img/map.png"); 
+    background-size: 100% auto; /* не знаю как лучше 100% или 1440 (размер статичного изображения). Сделал выбор в пользу концепции «блока навылет» */
     background-position: center center;
     background-repeat: no-repeat;
 }
