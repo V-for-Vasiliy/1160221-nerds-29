@@ -213,7 +213,7 @@ a {
 /* Layout - Clients */
 
 .clients-wrapper {
-    width: 1160px;
+    width: 1198px;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 36px;
@@ -228,6 +228,20 @@ a {
     padding-top: 20px;
     margin: 0;
 }
+
+.clients-item {
+    flex-basis: 298px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
 
 /*  Layout - Footer */
 
@@ -786,11 +800,26 @@ a {
     list-style: none;
 }
 
-.clients-item::after {
+.clients-item img {
+    opacity: 0.2;
+}
+
+.clients-item img:hover {
+    opacity: 1;
+}
+
+.clients-item img:active{
+    opacity: 0.1;
+}
+
+.clients-list li:not(:last-child)::after {
     content: "";
     width: 2px;
     height: 52px;
-    background-color: red;
+    background-color: var(--ui-base-color);
+    position: absolute;
+    display: block;
+    right: 0;
 }
 
 
