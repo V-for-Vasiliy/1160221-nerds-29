@@ -533,7 +533,7 @@ a {
     height: 114px;
 }
 
-.main-logo:active svg path {
+.main-logo:active path {
     fill: var(--ui-elements-noalpha-color);
 }
 
