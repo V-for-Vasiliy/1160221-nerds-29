@@ -732,24 +732,26 @@ a {
 }
 
 .about-list {
-    position: absolute;
     font-size: 16px;
     line-height: 48px;
     color: var(--light-text-color);
 
     list-style: none;
     margin: 0;
-    padding-left: 35px;
+    padding: 0;
 }
 
 .about-item::before {
-    position: absolute;
+    position: relative;
     content: "";
-    left: 0;
+    display: inline-block;
+
     width: 25px;
     height: 2px;
     background-color: var(--accent-color);
-    margin-top: 5.5%;
+    
+    margin-right: 10px;
+    top: -5px;
 }
 
 .statistics-list {
