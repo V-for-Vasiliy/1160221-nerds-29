@@ -902,31 +902,24 @@ a {
     box-shadow: inset 0px 3px 0px var(--inner-shadow-color);
 }
 
-.social-button-vkontakte {
-    background-image: url("../img/social/vk-icon.svg");
+.social-button {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.social-button-vkontakte {
+    background-image: url("../img/social/vk-icon.svg");
 }
 
 .social-button-facebook {
     background-image: url("../img/social/fb-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    display: block;
-    width: 100%;
-    height: 100%;
 }
 
 .social-button-instagram {
     background-image: url("../img/social/insta-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    display: block;
-    width: 100%;
-    height: 100%;
 }
 
 .social-item:active .social-button {
