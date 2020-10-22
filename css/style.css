@@ -809,7 +809,9 @@ a {
     background-color: var(--ui-base-color);
     position: absolute;
     display: block;
-    right: 0;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
