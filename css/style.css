@@ -569,9 +569,10 @@ a {
     color: var(--basic-text-color);
 }
 
-.navigation-link-current::after {
+.navigation-item-current::after {
     content: "";
-    position: absolute;
+    position: relative;
+    display: block;
     left: 0;
     bottom: -21px;
     width: 100%;
