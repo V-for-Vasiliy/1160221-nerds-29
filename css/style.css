@@ -749,7 +749,7 @@ a {
     width: 25px;
     height: 2px;
     background-color: var(--accent-color);
-    
+
     margin-right: 10px;
     top: -5px;
 }
@@ -818,7 +818,7 @@ a {
 
 .contacts {
     background-image: url("../img/map.png"); 
-    background-size: 100% auto; /* не знаю как лучше 100% или 1440 (размер статичного изображения). Сделал выбор в пользу концепции «блока навылет» */
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
