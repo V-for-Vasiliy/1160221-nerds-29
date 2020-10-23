@@ -1036,10 +1036,32 @@ a {
 }
 
 .template-item::before {
+    content: "";
+    position: relative;
     display: block;
-    content: url("https://via.placeholder.com/360x40"); /* на шаге «Деркоративные элементы» продумаю как сделать этот элемент */
+    background-color: var(--ui-hover-dark-color);
     width: 360px;
-    height: 40px;  
+    height: 40px;
+    border-radius: 4px 4px 0px 0px;
+    opacity: 0.12;
+}
+
+.template-item::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--main-background-color);
+    box-shadow: 23px 0px 0px var(--main-background-color), 46px 0px 0px var(--main-background-color);
+    
+}
+
+.template-item:hover::before {
+    opacity: 1;
 }
 
 .template-item:hover .template-description {
