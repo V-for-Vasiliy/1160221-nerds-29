@@ -579,7 +579,7 @@ a {
     display: block;
     left: 0;
     right: 0;
-    bottom: -21px;
+    bottom: -16px;
     height: 2px;
     background-color: var(--accent-color);
 }
