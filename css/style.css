@@ -992,9 +992,12 @@ a {
 
 .range-button::before {
     display: block;
-    content: url("https://via.placeholder.com/11x10"); /* на шаге «Деркоративные элементы» подключу картинки */
-    width: 11px;
-    height: 10px;  
+    content: "";
+    
+    border: 5px solid transparent;
+    border-top: 11px solid var(--ui-elements-noalpha-color);
+    width: 1px;
+    height: 1px;
 }
 
 .sort-link:hover,
