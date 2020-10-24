@@ -319,7 +319,7 @@ a {
     display: flex;
 
     margin: auto 0;
-    margin-right: 50px;
+    margin-right: 33px;
 }
 
 
@@ -333,12 +333,14 @@ a {
 
 .sort-range {
     display: flex;
+    position: relative;
+    right: -8px;
 
     margin: auto 0;
 }
 
 .range-button {
-    margin-right: 18px;
+    margin-right: 2px;
 }
 
 .sort-range .range-button:last-child {
@@ -1012,7 +1014,7 @@ a {
     display: flex;
     width: 11px;
     height: 10px;
-    padding: 0;
+    padding: 8px;
     cursor: pointer;
     border: none;
     border-radius: 0;
