@@ -19,8 +19,11 @@
     --ui-slider-active-color: #C1C1C1;
     --ui-elements-color: rgba(77, 77, 77, 0.4);
     --ui-elements-noalpha-color: #A6A6A6;
+    --ui-input-border-color: #D7DCDE;
+    --ui-input-border-hover: #B4B9BB;
     --range-active-color: #231F20;
     --inner-shadow-color: rgba(0, 1, 1, 0.1);
+    --modal-shadow: rgba(0, 0, 0, 0.4);
     --social-color: #E1E1E1;
     --gallery-img-border: rgba(0, 0, 0 , 0.1);
     --transparent: rgba(0, 0, 0, 0);
@@ -426,6 +429,8 @@ a {
     display: inline-block;
 
     vertical-align: middle;
+
+    cursor: pointer;
 
     font-weight: 500;
     font-size: 16px;
@@ -957,22 +962,150 @@ a {
 
 /* Modal */
 
-.modal {
-    display: none;
+.modal button {
+    border: none;
+    box-shadow: none;
+}
+
+.modal-feedback {
+    position: relative;
+    bottom: 770px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 760px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 84px;
+    padding-top: 63px;
+
     background-color: var(--main-background-color);
+    box-shadow: 0px 20px 40px var(--modal-shadow);
 }
 
 .modal-title {
     font-size: 45px;
     line-height: 53px;
     color: var(--basic-text-color);
+    margin: 0px;
+    margin-bottom: 36px;
 }
 
 .form-label {
+    width: 100%;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-text-color); 
+    margin-bottom: 10px;
+}
+
+.modal-input {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    box-shadow: none;
+    border: 2px solid var(--ui-input-border-color);
+    border-radius: 3px;
+}
+
+.modal-input:hover {
+    border-color: var(--ui-input-border-hover);
+}
+
+.modal-input:focus {
+    border-color: var(--basic-text-color);
+    outline: 0px;
+    outline-offset: 0;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.name-and-email-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.name-and-email-container input {
+    width: 100%;
+}
+
+.modal-name-continer,
+.modal-email-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 360px;
+}
+
+.modal-text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 760px;
+    margin-bottom: 46px;
+}
+
+.modal-text-container textarea {
+    width: 100%;
+    height: 86px;
+    resize: none;
+}
+
+.modal-close {
+    position: absolute;
+    cursor: pointer;
+    right: 90px;
+    top: 78px;
+    width: 21px;
+    height: 21px;
+    background-color: var(--transparent);
+    opacity: 0.3;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 1px;
+}
+
+.modal-close::before {
+    position: relative;
+    left: -10px;
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    position: relative;
+    left: -10px;
+    top: -4px;
+    transform: rotate(-45deg);
+}
+
+.modal-submit {
+    padding-left: 83px;
+    padding-right: 83px;
 }
 
 

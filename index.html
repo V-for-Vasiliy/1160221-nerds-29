@@ -195,15 +195,23 @@
     <!--начало кода для popup окна-->
     <section class="modal modal-feedback">
       <h2 class="modal-title">Напишите нам</h2>
-      <form action="post" name="feedback-form">
-        <label class="form-label" for="name-field">Ваше имя:</label>
-        <input type="text" required id="name-field" name="name" placeholder="Имя Фамилия">
-        <label class="form-label" for="email-field">Ваш email:</label>
-        <input type="email" required id="email-field" name="email" placeholder="email@example.com">
-        <label class="form-label" for="message-field">Текст письма:</label>
-        <textarea name="message" required id="message-field" cols="62" rows="10" placeholder="В свободной форме"></textarea>
-        <button type="submit">Отправить</button>
-        <button class="modal-close" type="button">Закрыть</button>
+      <form class="feedback-form" action="post" name="feedback-form">
+        <div class="name-and-email-container">
+          <div class="modal-name-continer">
+            <label class="form-label" for="name-field">Ваше имя:</label>
+            <input class="modal-input" type="text" required id="name-field" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="modal-email-container">
+            <label class="form-label" for="email-field">Ваш email:</label>
+            <input class="modal-input" type="email" required id="email-field" name="email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="modal-text-container">
+          <label class="form-label" for="message-field">Текст письма:</label>
+          <textarea class="modal-input" name="message" required id="message-field" cols="62" rows="6" placeholder="В свободной форме"></textarea>
+        </div class="modal-text-container">
+        <button class="button modal-submit" type="submit">Отправить</button>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </form>
     </section>
     <!--конец кода для popup окна-->
