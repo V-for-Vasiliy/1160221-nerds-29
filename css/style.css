@@ -1122,8 +1122,7 @@ a {
 }
 
 .modal-submit {
-    padding-left: 83px;
-    padding-right: 83px;
+    min-width: 259px;
 }
 
 
