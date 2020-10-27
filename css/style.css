@@ -991,9 +991,7 @@ a {
 }
 
 .modal-feedback {
-    box-sizing: border-box;
-
-    width: 960px;
+    width: 760px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 84px;
