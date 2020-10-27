@@ -1083,13 +1083,39 @@ a {
     position: absolute;
     cursor: pointer;
     right: 90px;
-    top: 78px;
+    top: 80px;
+
     width: 21px;
     min-height: 21px;
+
     background-color: var(--transparent);
     border: none;
     box-shadow: none;
     opacity: 0.3;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 8px;
+    left: -3px;
+
+    width: 27px;
+    height: 4px;
+    
+    background-color: var(--accent-color);
+    border-radius: 1px;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
 }
 
 .modal-close:hover {
@@ -1098,29 +1124,6 @@ a {
 
 .modal-close:active {
     opacity: 0.1;
-}
-
-.modal-close::before,
-.modal-close::after {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 1px;
-}
-
-.modal-close::before {
-    position: relative;
-    left: -10px;
-    transform: rotate(45deg);
-}
-
-.modal-close::after {
-    position: relative;
-    left: -10px;
-    top: -4px;
-    transform: rotate(-45deg);
 }
 
 .modal-submit {
