@@ -1021,7 +1021,7 @@ a {
     grid-column-end: 3;
 }
 
-.modal-text-container textarea {
+.modal-alone-container textarea {
     height: 86px;
     resize: none;
 }
