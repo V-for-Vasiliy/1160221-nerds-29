@@ -1008,30 +1008,18 @@ a {
     row-gap: 34px;
 }
 
-.modal-name-continer,
-.modal-email-container {
+.modal-half-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.modal-name-continer {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.modal-email-continer {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.modal-text-container {
+.modal-alone-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 760px;
     margin-bottom: 12px;
-    grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -1105,7 +1093,7 @@ a {
 
     width: 27px;
     height: 4px;
-    
+
     background-color: var(--accent-color);
     border-radius: 1px;
 }
