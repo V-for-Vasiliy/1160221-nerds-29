@@ -1002,7 +1002,6 @@ a {
 
 .feedback-form {
     display: grid;
-    grid-template-rows: min-content min-content min-content;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
     row-gap: 34px;
