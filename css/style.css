@@ -1069,6 +1069,10 @@ a {
     outline-offset: 0;
 }
 
+.modal-input:not(:placeholder-shown):invalid {
+    border-color: var(--accent-color);
+}
+
 .modal-close {
     position: absolute;
     cursor: pointer;
