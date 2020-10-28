@@ -980,7 +980,7 @@ a {
 /* Modal */
 
 .modal {
-    visibility: hidden; /* следующая лекция о доступном скрытии */
+    display: none;
 
     position: fixed;
     left: 0;
