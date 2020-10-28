@@ -980,6 +980,8 @@ a {
 /* Modal */
 
 .modal {
+    visibility: hidden; /* следующая лекция о доступном скрытии */
+
     position: fixed;
     left: 0;
     right: 0;
