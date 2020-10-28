@@ -1177,7 +1177,7 @@ a {
 
 .range-button-active .range-icon,
 .range-button:active .range-icon  {
- fill: var(--range-active-color);
+    fill: var(--range-active-color);
 }
 
 .main-title {
