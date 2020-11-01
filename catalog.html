@@ -68,41 +68,45 @@
             </fieldset>
             <fieldset class="filter-fieldset">
               <legend class="fieldset-legend">Сетка:</legend>
-              <div class="filter-item">
-                <input type="radio" name="layout-filter" id="layout-filter-adaptive" value="Адаптивная">
-                <label class="filter-label" for="layout-filter-adaptive">Адаптивная</label>
-              </div>
-              <div class="filter-item">
-                <input type="radio" name="layout-filter" id="layout-filter-fix" value="Фиксированная">
-                <label class="filter-label" for="layout-filter-fix">Фиксированная</label>
-              </div>
-              <div class="filter-item">
-                <input type="radio" name="layout-filter" id="layout-filter-rubber" value="Резиновая">
-                <label class="filter-label" for="layout-filter-rubber">Резиновая</label>
-              </div>
+              <ul class="filter-list">
+                <li class="filter-option filter-radio">
+                  <input type="radio" name="layout-filter" id="layout-filter-adaptive" value="Адаптивная">
+                  <label class="filter-label" for="layout-filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input type="radio" name="layout-filter" id="layout-filter-fix" value="Фиксированная">
+                  <label class="filter-label" for="layout-filter-fix">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input type="radio" name="layout-filter" id="layout-filter-rubber" value="Резиновая">
+                  <label class="filter-label" for="layout-filter-rubber">Резиновая</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="filter-fieldset">
               <legend class="fieldset-legend">Особенности:</legend>
-              <div class="filter-item">
-                <input type="checkbox" id="checkbox-features-slider" value="Слайдер">
-                <label for="checkbox-features-slider">Слайдер</label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="checkbox-features-features-block" value="Блок преимуществ">
-                <label for="checkbox-features-features-block">Блок преимуществ</label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="checkbox-features-news" value="Новости">
-                <label for="checkbox-features-news">Новости</label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="checkbox-features-gallery" value="Галерея">
-                <label for="checkbox-features-gallery">Галерея</label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="checkbox-features-cart" value="Корзина">
-                <label for="checkbox-features-cart">Корзина</label>
-              </div>
+              <ul class="filter-list">
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" id="checkbox-features-slider" value="Слайдер">
+                  <label for="checkbox-features-slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" id="checkbox-features-features-block" value="Блок преимуществ">
+                  <label for="checkbox-features-features-block">Блок преимуществ</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" id="checkbox-features-news" value="Новости">
+                  <label for="checkbox-features-news">Новости</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" id="checkbox-features-gallery" value="Галерея">
+                  <label for="checkbox-features-gallery">Галерея</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" id="checkbox-features-cart" value="Корзина">
+                  <label for="checkbox-features-cart">Корзина</label>
+                </li>
+              </ul>
             </fieldset>
             <input class="button filter-button" type="submit" value="Показать">
           </form>
