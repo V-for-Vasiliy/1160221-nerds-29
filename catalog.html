@@ -38,10 +38,74 @@
       <div class="catalog-wrapper">
         <section class="template-shop">
           <h2 class="visually-hidden">Фильтры</h2> <!-- Скрытый заголовок -->
-          <h3 class="shop-title">Стоимость:</h3>
-          <h3 class="shop-title">Сетка:</h3>
-          <h3 class="shop-title">Особенности:</h3>
-          <button class="button filter-button" type="submit">Показать</button>
+          <form class="filters" method="GET" action="https://echo.htmlacademy.ru/">
+            <fieldset class="filter-fieldset">
+              <legend class="fieldset-legend">Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      width: 30%;
+                      margin-left: 20%">
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                  left: 20%">
+                  </div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                  left: 50%">
+                  </div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter-fieldset">
+              <legend class="fieldset-legend">Сетка:</legend>
+              <div class="filter-item">
+                <input type="radio" name="layout-filter" id="layout-filter-adaptive" value="Адаптивная">
+                <label class="filter-label" for="layout-filter-adaptive">Адаптивная</label>
+              </div>
+              <div class="filter-item">
+                <input type="radio" name="layout-filter" id="layout-filter-fix" value="Фиксированная">
+                <label class="filter-label" for="layout-filter-fix">Фиксированная</label>
+              </div>
+              <div class="filter-item">
+                <input type="radio" name="layout-filter" id="layout-filter-rubber" value="Резиновая">
+                <label class="filter-label" for="layout-filter-rubber">Резиновая</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-fieldset">
+              <legend class="fieldset-legend">Особенности:</legend>
+              <div class="filter-item">
+                <input type="checkbox" id="checkbox-features-slider" value="Слайдер">
+                <label for="checkbox-features-slider">Слайдер</label>
+              </div>
+              <div class="filter-item">
+                <input type="checkbox" id="checkbox-features-features-block" value="Блок преимуществ">
+                <label for="checkbox-features-features-block">Блок преимуществ</label>
+              </div>
+              <div class="filter-item">
+                <input type="checkbox" id="checkbox-features-news" value="Новости">
+                <label for="checkbox-features-news">Новости</label>
+              </div>
+              <div class="filter-item">
+                <input type="checkbox" id="checkbox-features-gallery" value="Галерея">
+                <label for="checkbox-features-gallery">Галерея</label>
+              </div>
+              <div class="filter-item">
+                <input type="checkbox" id="checkbox-features-cart" value="Корзина">
+                <label for="checkbox-features-cart">Корзина</label>
+              </div>
+            </fieldset>
+            <input class="button filter-button" type="submit" value="Показать">
+          </form>
         </section>
         <section class="shop-content">
           <h2 class="visually-hidden">Шаблоны</h2>
