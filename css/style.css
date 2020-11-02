@@ -130,16 +130,10 @@ a {
 }
 
 .promo-description-container {
+    position: relative;
+    z-index: 1;
     padding-top: 78px;
     width: 560px;
-}
-
-.slide {
-    display: none;
-}
-
-.slide-current {
-    display: block;
 }
 
 .slide-image {
@@ -156,6 +150,7 @@ a {
     bottom: 96px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 0;
 }
 
 
