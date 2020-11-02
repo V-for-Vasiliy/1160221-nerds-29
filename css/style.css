@@ -1175,7 +1175,7 @@ a {
 .range-filter {
     width: 260px;
     margin-top: 34px;
-  }
+}
 
 .range-controls {
     position: relative;
@@ -1188,7 +1188,7 @@ a {
     padding-top: 39px;
     padding-left: 20px;
     padding-right: 20px;
-  }
+}
 
 .price-controls {
     display: flex;
@@ -1255,12 +1255,12 @@ a {
     height: 25px;
     border-radius: 50%;
     box-shadow: inset 0 0 0 4px var(--ui-hover-dark-color);
-  }
+}
 
 .filter-input-radio:not(:checked) + label::before {
     border-radius: 50%;
     box-shadow: inset 0 0 0 4px var(--ui-hover-dark-color);
-  }
+}
 
 .filter-input-radio:checked + label::after {
     content: "";
@@ -1271,7 +1271,7 @@ a {
     height: 9px;
     border-radius: 50%;
     background-color: var(--ui-hover-dark-color);
-  }
+}
 
 .filter-input-checkbox + label::before {
     content: "";
@@ -1280,16 +1280,16 @@ a {
     top: -2px;
     width: 23px;
     height: 23px;
-  }
+}
 
 .filter-input-checkbox:not(:checked) + label::before {
     border-radius: 3px;
     box-shadow: inset 0 0 0 2px var(--ui-hover-dark-color);
-  }
+}
 
 .filter-input-checkbox:checked + label::before {
     background-image: url("../img/checkbox.svg");
-  }
+}
 
 .filter-input-checkbox:checked + label::after {
     content: "";
@@ -1299,7 +1299,7 @@ a {
     width: 24px;
     height: 20px;
     background-image: url('../img/checked-icon.svg');
-  }
+}
 
 .filter-option label::before,
 .filter-option label::after {
