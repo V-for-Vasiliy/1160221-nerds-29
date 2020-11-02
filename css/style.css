@@ -528,6 +528,7 @@ a {
 }
 
 .filter-button {
+    width: 100%;
     border: none;
 
     background-color: var(--ui-base-color);
@@ -1138,7 +1139,7 @@ a {
     margin: 0;
     padding: 0;
 
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .filter-list {
@@ -1147,8 +1148,16 @@ a {
     margin: 0;
 }
 
+.filter-cost {
+    margin-bottom: 52px;
+}
+
+.filter-features {
+    margin-bottom: 27px;
+}
+
 .filter-option {
-    margin-bottom: 15px;
+    margin-bottom: 22px;
 }
 
 .fieldset-legend {
@@ -1157,7 +1166,15 @@ a {
     text-transform: uppercase;
     font-weight: bold;
 
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+}
+
+.filter-option label {
+    padding-left: 36px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
 }
 
 .range-filter {
@@ -1165,7 +1182,7 @@ a {
     margin-top: 34px;
   }
 
-  .range-controls {
+.range-controls {
     position: relative;
 
     height: 41px;
@@ -1178,23 +1195,23 @@ a {
     padding-right: 20px;
   }
 
-  .price-controls {
+.price-controls {
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .range-controls .scale {
+.range-controls .scale {
     height: 2px;
     background: var(--ui-input-border-color);
-  }
+}
 
-  .range-controls .bar {
+.range-controls .bar {
     width: 70%;
     height: 2px;
     background: var(--success-color);
-  }
+}
 
-  .range-controls .toggle {
+.range-controls .toggle {
     position: absolute;
     top: 31px;
     left: 0;
@@ -1206,22 +1223,22 @@ a {
     border-radius: 50%;
     box-shadow: 0px 2px 1px var(--toggle-shadow);
     cursor: pointer;
-  }
+}
 
-  .range-controls .toggle-min {
+.range-controls .toggle-min {
     left: 18px;
-  }
+}
   
   .range-controls .toggle-max {
     left: 160px;
-  }
+}
 
-  .price-controls label {
+.price-controls label {
     text-transform: uppercase;
     font-size: 16px;
-  }
+}
 
-  .price-controls input {
+.price-controls input {
     width: 60px;
     padding: 10px;
     margin-left: 10px;
@@ -1232,7 +1249,77 @@ a {
     background: var(--ui-base-color);
     font-family: inherit;
     font-size: inherit;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4px var(--ui-hover-dark-color);
   }
+
+.filter-input-radio:not(:checked) + label::before {
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4px var(--ui-hover-dark-color);
+  }
+
+.filter-input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--ui-hover-dark-color);
+  }
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    width: 23px;
+    height: 23px;
+  }
+
+.filter-input-checkbox:not(:checked) + label::before {
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 2px var(--ui-hover-dark-color);
+  }
+
+.filter-input-checkbox:checked + label::before {
+    background-image: url("../img/checkbox.svg");
+  }
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 24px;
+    height: 20px;
+    background-image: url('../img/checked-icon.svg');
+  }
+
+.filter-option label::before,
+.filter-option label::after {
+    opacity: 0.4;
+}
+
+.filter-option:hover label::before,
+.filter-option:hover label::after {
+    opacity: 1;
+}
+
+.filter-option:disabled label::before,
+.filter-option:disabled label::after {
+    opacity: 0.1;
+}
 
 
 /* Catalog */
