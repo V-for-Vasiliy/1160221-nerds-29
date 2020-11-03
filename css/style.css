@@ -1198,6 +1198,20 @@ a {
     justify-content: space-between;
 }
 
+/* Chrome, Safari, Edge, Opera */
+.price-controls input::-webkit-outer-spin-button,
+.price-controls input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.price-controls input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 .range-controls .scale {
     height: 2px;
     background: var(--ui-input-border-color);
