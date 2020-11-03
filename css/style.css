@@ -132,6 +132,14 @@ a {
     padding-bottom: 80px;
 }
 
+.slide {
+    display: none;
+}
+
+.slide-current {
+    display: block;
+}
+
 .promo-description-container {
     position: relative;
     z-index: 1;
