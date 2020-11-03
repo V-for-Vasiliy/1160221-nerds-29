@@ -1227,6 +1227,7 @@ a {
 
 .range-controls .bar {
     height: 2px;
+    width: 100%;
     background: var(--success-color);
 }
 
@@ -1244,10 +1245,12 @@ a {
 }
 
 .range-controls .toggle-min {
+    left: 0;
     margin-left: 18px;
 }
   
   .range-controls .toggle-max {
+    right: 0;
     margin-right: 18px;
 }
 
