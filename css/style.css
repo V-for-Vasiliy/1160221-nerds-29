@@ -1259,7 +1259,6 @@ a {
 }
 
 .filter-input-radio:not(:checked) + label::before {
-    border-radius: 50%;
     box-shadow: inset 0 0 0 4px var(--ui-hover-dark-color);
 }
 
