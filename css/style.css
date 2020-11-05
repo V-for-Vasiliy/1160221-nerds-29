@@ -782,6 +782,7 @@ a {
     position: relative;
     content: "";
     display: inline-block;
+    vertical-align: inherit;
 
     width: 25px;
     height: 2px;
