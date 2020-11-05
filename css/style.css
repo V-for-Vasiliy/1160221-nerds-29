@@ -1008,6 +1008,10 @@ a {
     box-shadow: 0px 20px 40px var(--modal-shadow);
 }
 
+.modal-show {
+    display: block;
+}
+
 .modal-feedback {
     width: 760px;
     padding-left: 100px;
