@@ -1556,7 +1556,7 @@ a {
 
 @keyframes bounce {
     0% {
-      transform: translateY(-2000px);
+        transform: translateY(-2000px);
     }
 
     50% {
