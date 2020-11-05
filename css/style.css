@@ -581,7 +581,7 @@ a {
     background-color: var(--ui-base-color);
 }
 
-.main-navigation a:hover {
+.main-navigation a[href]:hover {
     color: var(--accent-color);
 }
 
