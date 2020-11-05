@@ -586,7 +586,7 @@ a {
 }
 
 .main-navigation a:focus {
-    color: var(--basic-text-active-color);
+    color: var(--accent-color);
 }
 
 .navigation-list {
@@ -1337,6 +1337,13 @@ a {
 
 .filter-option:hover label::before,
 .filter-option:hover label::after {
+    opacity: 1;
+}
+
+.filter-input-checkbox:focus + label::after,
+.filter-input-checkbox:focus + label::before,
+.filter-input-radio:focus + label::after,
+.filter-input-radio:focus + label::before {
     opacity: 1;
 }
 
